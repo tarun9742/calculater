@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Calculater</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculater</h1>
+      <hr />
+      <input type="text" id="field1" />
+      <input type="text" id="answer" />
+      <div style="display: flex;">
+      <!-- <div id="field1"></div>
+      <div id="answer"></div> -->
+      </div>
+      <button id="clear" onclick="field1.value = ''; answer.value = '' ">clear</button>
+      <button id="backSpace" onclick="field1.value = field1.value.toString().slice(0, -1)"> BackSpace </button>
+   <!-- buttons -->
+      <div style="display: flex;">
+   <!-- numberButtons -->
+      <div style="margin-left: 40px;">
+        <div class="numberButtons" style="margin-top: 40px">
+            <button id="num1" onclick="field1.value += '1' " class="button">1</button>
+            <button id="num2" onclick="field1.value += '2' " class="button">2</button>
+            <button id="num3" onclick="field1.value += '3' " class="button">3</button>
+          </div>
+          <div class="numberButtons">
+            <button id="num4" onclick="field1.value += '4' " class="button">4</button>
+            <button id="num5" onclick="field1.value += '5' " class="button">5</button>
+            <button id="num6" onclick="field1.value += '6' " class="button">6</button>
+          </div>
+          <div class="numberButtons">
+            <button id="num7" onclick="field1.value += '7' " class="button">7</button>
+            <button id="num8" onclick="field1.value += '8' " class="button">8</button>
+            <button id="num9" onclick="field1.value += '9' " class="button">9</button>
+          </div>
+          <div class="numberButtons">
+            <button style="margin-left: 98px" id="num0" onclick="field1.value += '7' " class="button">0</button>
+          </div>
+      </div>
+      <!-- operation button -->
+      <div id="operationButton">
+        <div>
+        <button onclick="field1.value += '+' ">+</button>
+        <button onclick="field1.value += '-' ">-</button>
+        </div>
+        <div>
+            <button onclick="field1.value += '*' ">*</button>
+            <button onclick="field1.value += '/' ">/</button>
+        </div>
+        <div>
+        <button style="width: 200px;" id="equal" onclick="answer.value= eval(field1.value) ; ">=</button>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

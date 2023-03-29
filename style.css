@@ -1,0 +1,75 @@
+.container{
+    width: 600px;
+    height: 700px;
+    border: 10px solid #000;
+    border-radius: 10px;
+    margin: 50px;
+    background-color: #d4fffc;
+}
+.container h1{
+    text-align: center;
+    font-size: 50px;
+}
+#field1{
+    width: 380px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    font-size: 30px;
+}
+#answer{
+    margin-left: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    font-size: 30px;
+}
+
+.numberButtons button{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: 3px solid #ff9408;
+    font-size: 30px;
+    margin: 8px;
+    cursor: pointer;
+}
+#operationButton{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#operationButton button{
+    width: 90px;
+    height: 70px;
+    margin: 8px;
+    border-radius: 15px;
+    font-size: 50px;
+    background-color: pink;
+    color: #273621;
+    cursor: pointer;
+}
+#equal{
+    width: 188px;
+}
+#clear{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 90px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: gray;
+    cursor: pointer;
+}
+#backSpace{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 90px;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgb(243, 74, 74);
+    cursor: pointer;
+}
